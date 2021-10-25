@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ServerIP</key>
+	<string>https://tipforpet.000webhostapp.com/tips_for_pets/api/</string>
+	<key>ServerIPForAdviceImages</key>
+	<string>https://tipforpet.000webhostapp.com/tips_for_pets/api/</string>
+	<key>ServerIPOld</key>
+	<string>https://suratrealestateagents.000webhostapp.com/tips_for_pets/api/</string>
+	<key>ServerIPForAdviceImagesOld</key>
+	<string>https://suratrealestateagents.000webhostapp.com/tips_for_pets/api/</string>
+	<key>AvailabilityHostToCheck</key>
+	<string>http://www.google.com</string>
+	<key>User_Login</key>
+	<string>user_login.php</string>
+	<key>User_Logout</key>
+	<string>user_logout.php</string>
+	<key>User_Signup</key>
+	<string>user_signup.php</string>
+	<key>User_GetProfileDetailsByUserId</key>
+	<string>user_getprofiledetailsbyuserid.php</string>
+	<key>User_UpdateProfile</key>
+	<string>user_updateprofile.php</string>
+	<key>User_ForgetPassword</key>
+	<string>user_forgetpassword.php</string>
+	<key>User_ForgetPasswordDirectPassword</key>
+	<string>user_forgetpassword_direct_password.php</string>
+	<key>User_ChangePassword</key>
+	<string>user_changepassword.php</string>
+	<key>User_ChangeProfilePicture</key>
+	<string>user_changeprofilepicture.php</string>
+	<key>GetAllPetTypes</key>
+	<string>getallpettypes.php</string>
+	<key>GetAllCategories</key>
+	<string>getallcategories.php</string>
+	<key>GetAllSubCategories</key>
+	<string>getallsubcategories.php</string>
+	<key>GetAllAdvices</key>
+	<string>getalladvices.php</string>
+	<key>User_GetAllMyPets</key>
+	<string>user_getallmypets.php</string>
+	<key>User_AddMyPet</key>
+	<string>user_addmypet.php</string>
+	<key>User_DeleteMyPet</key>
+	<string>user_deletemypet.php</string>
+	<key>User_UpdateMyPet</key>
+	<string>user_updatemypet.php</string>
+	<key>User_ChangeMyPetImage</key>
+	<string>user_changemypetimage.php</string>
+</dict>
+</plist>

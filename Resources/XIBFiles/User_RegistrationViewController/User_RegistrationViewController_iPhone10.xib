@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="User_RegistrationViewController">
+            <connections>
+                <outlet property="btnLogin" destination="RGa-dW-sdy" id="Nug-ck-IvN"/>
+                <outlet property="btnSignup" destination="f7F-U4-o3C" id="aoe-ye-NaU"/>
+                <outlet property="btnSkip" destination="DgS-Wx-1mK" id="L4x-4P-unc"/>
+                <outlet property="btnUploadPhoto" destination="THs-Mv-SYw" id="9l5-dp-C6J"/>
+                <outlet property="imageViewLogo" destination="K2q-lJ-hHz" id="Y1c-dr-uD3"/>
+                <outlet property="imageViewProfilePicture" destination="Bht-V0-uLn" id="hQh-eR-jYi"/>
+                <outlet property="imageViewUploadPhoto" destination="HOw-IL-iTF" id="Xrx-4g-dvz"/>
+                <outlet property="lblAlreadyHaveAnAccount" destination="9FH-fH-rg5" id="Hbm-9N-h4l"/>
+                <outlet property="lblBySigningUp" destination="GI2-zM-5XB" id="kw4-Gy-ZeQ"/>
+                <outlet property="mainContainerView" destination="DFo-il-Gbs" id="LQx-KZ-0dv"/>
+                <outlet property="mainScrollView" destination="98s-ox-FGO" id="r5O-7d-ayU"/>
+                <outlet property="profilePictureContainerView" destination="8Bg-uO-Erg" id="z50-gm-PZx"/>
+                <outlet property="txtEmail" destination="geE-0i-R7J" id="GsE-OZ-qj9"/>
+                <outlet property="txtEmailBottomSeparatorView" destination="wiV-fh-xC3" id="eVJ-Cs-gZ8"/>
+                <outlet property="txtName" destination="idI-o1-dib" id="HyH-XH-6Uf"/>
+                <outlet property="txtNameBottomSeparatorView" destination="yOC-zm-Lh9" id="kfJ-ZZ-ro7"/>
+                <outlet property="txtPassword" destination="Qcl-cX-nEI" id="0H3-8r-7c7"/>
+                <outlet property="txtPasswordBottomSeparatorView" destination="HL4-1t-NXT" id="dcO-N3-5RV"/>
+                <outlet property="txtPhoneNumber" destination="54e-pW-Z4j" id="lHK-TV-VK4"/>
+                <outlet property="txtPhoneNumberBottomSeparatorView" destination="Jwh-5P-6dN" id="m5V-3c-7pd"/>
+                <outlet property="uploadPhotoContainerView" destination="ibN-4i-8Lb" id="tca-mV-maY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" misplaced="YES" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" id="98s-ox-FGO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" misplaced="YES" id="DFo-il-Gbs">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="865"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" misplaced="YES" id="8Bg-uO-Erg">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="301"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="main_logo.png" id="K2q-lJ-hHz" customClass="AsyncImageView">
+                                            <rect key="frame" x="116" y="86" width="143" height="143"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="Bht-V0-uLn" customClass="AsyncImageView">
+                                            <rect key="frame" x="0.0" y="44" width="375" height="257"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DgS-Wx-1mK">
+                                            <rect key="frame" x="275" y="44" width="85" height="61"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="SKIP"/>
+                                        </button>
+                                        <view contentMode="scaleToFill" misplaced="YES" id="ibN-4i-8Lb">
+                                            <rect key="frame" x="305" y="231" width="60" height="60"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="camera_icon.png" id="HOw-IL-iTF" customClass="AsyncImageView">
+                                                    <rect key="frame" x="5" y="5" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="THs-Mv-SYw">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" misplaced="YES" id="idI-o1-dib" customClass="JVFloatLabeledTextField">
+                                    <rect key="frame" x="35" y="315" width="305" height="55"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" misplaced="YES" id="yOC-zm-Lh9">
+                                    <rect key="frame" x="35" y="370" width="305" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" misplaced="YES" id="geE-0i-R7J" customClass="JVFloatLabeledTextField">
+                                    <rect key="frame" x="35" y="400" width="305" height="55"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" misplaced="YES" id="wiV-fh-xC3">
+                                    <rect key="frame" x="35" y="455" width="305" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" misplaced="YES" id="Qcl-cX-nEI" customClass="JVFloatLabeledTextField">
+                                    <rect key="frame" x="35" y="485" width="305" height="55"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" misplaced="YES" id="HL4-1t-NXT">
+                                    <rect key="frame" x="35" y="540" width="305" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" misplaced="YES" id="54e-pW-Z4j" customClass="JVFloatLabeledTextField">
+                                    <rect key="frame" x="35" y="570" width="305" height="55"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" misplaced="YES" id="Jwh-5P-6dN">
+                                    <rect key="frame" x="35" y="625" width="305" height="1"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="By signing up, I agree to TIP FOR PET T&amp;C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GI2-zM-5XB">
+                                    <rect key="frame" x="35" y="658" width="305" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f7F-U4-o3C">
+                                    <rect key="frame" x="35" y="693" width="305" height="58"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.41960784309999999" green="0.73725490199999999" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="CREATE">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9FH-fH-rg5">
+                                    <rect key="frame" x="35" y="772" width="305" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RGa-dW-sdy">
+                                    <rect key="frame" x="35" y="808" width="305" height="28"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <state key="normal" title="LOGIN">
+                                        <color key="titleColor" red="0.41960784309999999" green="0.73725490199999999" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </view>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="36" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_icon.png" width="128" height="128"/>
+        <image name="main_logo.png" width="512" height="512"/>
+    </resources>
+</document>
